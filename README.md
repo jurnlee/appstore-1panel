@@ -1,22 +1,12 @@
  中文 | [English](https://github.com/okxlin/appstore/blob/localApps/README-en.md)
 ***
 
-## 打赏链接
-
-[**点我打赏，用爱发电**](https://afdian.net/a/dockerapps)
-
-[![**点我打赏，用爱发电**](https://github.com/okxlin/appstore/raw/localApps/docs/afdian-logo.png)](https://afdian.net/a/dockerapps)
-
-* * *
 ## 目录
-
-- [打赏链接](#打赏链接)
 - [免责声明](#免责声明)
   - [1. 镜像容器适配](#1-镜像容器适配)
   - [2. 法律遵守](#2-法律遵守)
   - [3. 免责声明接受](#3-免责声明接受)
 - [1. 简介](#1-简介)
-  - [1Panel第三方应用商店应用分类合集与介绍](#1panel第三方应用商店应用分类合集与介绍)
 - [2. 使用方式](#2-使用方式)
   - [2.1 国内网络](#21-国内网络)
     - [2.1.1 使用 git 命令获取应用](#211-使用-git-命令获取应用)
@@ -51,12 +41,6 @@
 
 致力于一键运行各种 Docker 应用。无需复杂配置，享受便利和高效。
 
-### 1Panel第三方应用商店应用分类合集与介绍
-
-- https://1p.131.gs
-
-**感谢作者[@包子叔](https://github.com/baozishu)**
-
 ## 2. 使用方式
 
 默认`1Panel`安装在`/opt/`路径下，如果不是按需修改以下。
@@ -64,7 +48,6 @@
 ### 2.1 国内网络
 
 > GitHub加速方式
->> - (本仓库已添加)自建：https://github.com/hunshcn/gh-proxy
 >> - https://mirror.ghproxy.com
 
 #### 2.1.1 使用 git 命令获取应用
