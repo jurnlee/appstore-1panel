@@ -193,8 +193,7 @@ cat ./data/hbbs/id_ed25519.pub
 
 ## 4. 应用
 
-- [x] [Bark](https://bark.day.app/)
-- [x] [Cookie-Cloud](https://github.com/easychen/CookieCloud/)
+- [x] [drawdb](https://github.com/drawdb-io/drawdb)
 - [x] [Elastic](https://www.elastic.co/)
     - [x] [Elasticsearch](https://www.elastic.co/elasticsearch/)
     - [x] [Kibana](https://www.elastic.co/kibana/)
@@ -202,30 +201,18 @@ cat ./data/hbbs/id_ed25519.pub
 - [x] [Emby](https://emby.media/)
 - [x] [Gitea](https://gitea.io/)
     - [ ] [Gogs](https://gogs.io/)
-- [x] [GitLab](https://about.gitlab.com/) `不推荐`
-- [x] [Halo](https://halo.run/)
-- [x] [Immich](https://immich.app/)
-- [x] [IYUUPlus](https://github.com/ledccn/IYUUPlus/)
 - [x] [Jellyfin](https://jellyfin.org/)
-- [x] [LinkDing](https://github.com/sissbruecker/linkding/)
 - [x] [Minio](https://min.io/)
 - [x] [MySQL](https://www.mysql.com/)
     - [x] [MariaDB](https://mariadb.org/)
     - [ ] [Percona](https://www.percona.com/)
-- [x] [MoviePilot](https://github.com/jxxghp/MoviePilot/)
 - [x] [Nacos](https://nacos.io/)
 - [x] [OneDev](https://onedev.io/)
-- [x] [PostgreSQL](https://www.postgresql.org/)
-- [x] [qBittorrent](https://www.qbittorrent.org/)
-- [x] [QingLong](https://github.com/whyour/qinglong/)
-- [x] [Redis](https://redis.io/)
-- [x] [Sentinel-Dashboard](https://sentinelguard.io/)
 - [x] [SftpGo](https://sftpgo.com/)
 - [x] [SpeedTest](https://www.speedtest.net/)
     - [x] [SpeedTest-X](https://github.com/BadApple9/speedtest-x/)
 - [x] [SpeedTest-Tracker](https://docs.speedtest-tracker.dev/)
 - [x] [Transmission](https://transmissionbt.com/)
-- [x] [Uptime-Kuma](https://github.com/louislam/uptime-kuma/)
 - [x] [ZeroTier](https://www.zerotier.com/) `客户端`
     - [x] [Ztncui](https://www.zerotier.com/) `服务端`
 

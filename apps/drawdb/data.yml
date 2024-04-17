@@ -1,0 +1,20 @@
+name: drawdb
+tags:
+    - Tool
+title: drawdb数据库实体绘制管理工具
+type: 工具
+description: drawdb数据库实体绘制管理工具
+additionalProperties:
+    key: drawdb
+    name: drawdb
+    tags:
+        - Tool
+    shortDescZh: drawdb数据库实体绘制管理工具
+    shortDescEn: drawdb
+    type: tool
+    crossVersionUpdate: true
+    limit: 0
+    recommend: 0
+    website: https://github.com/drawdb-io/drawdb
+    github: https://github.com/drawdb-io/drawdb
+    document: https://github.com/drawdb-io/drawdb

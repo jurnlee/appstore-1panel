@@ -1,0 +1,24 @@
+additionalProperties:
+    formFields:
+        - default: 8088
+          edit: true
+          envKey: PANEL_APP_PORT_HTTP
+          labelEn: WebUI Port
+          labelZh: 网页端口
+          required: true
+          rule: paramPort
+          type: number
+        - default: drawdb
+          edit: true
+          envKey: CONTAINER_NAME
+          labelEn: container name
+          labelZh: 容器名称
+          required: true
+          type: text
+        - default: ./data/config
+          edit: true
+          envKey: CONFIG_PATH
+          labelEn: config path
+          labelZh: 配置文件路径
+          required: false
+          type: text

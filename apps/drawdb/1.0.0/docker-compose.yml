@@ -1,0 +1,20 @@
+version: "3"
+services:
+  115pc:
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    environment:
+      - "TZ=Asia/Shanghai"
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:5800"
+    volumes:
+      - "${CONFIG_PATH}:/etc/nginx/conf.d/default.conf"
+    image: registry.cn-hangzhou.aliyuncs.com/jlee/drawdb:1.0.0
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true
