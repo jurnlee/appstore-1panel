@@ -1,0 +1,19 @@
+name: Spug
+tags:
+    - Tool
+title: 易用的开源运维平台
+description: 易用的开源运维平台
+additionalProperties:
+    key: Spug
+    name: Spug
+    tags:
+        - Tool
+    shortDescZh: 易用的开源运维平台
+    shortDescEn: operation platform
+    type: tool
+    crossVersionUpdate: true
+    limit: 0
+    recommend: 12
+    website: https://spug.cc/
+    github: https://github.com/openspug/spug
+    document: https://spug.cc/docs/about-spug

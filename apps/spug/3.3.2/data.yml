@@ -1,0 +1,47 @@
+additionalProperties:
+    formFields:
+        - default: 6080
+          edit: true
+          envKey: PANEL_APP_PORT_HTTP
+          labelEn: WebUI Port
+          labelZh: 网页端口
+          required: true
+          rule: paramPort
+          type: number
+        - default: mysql
+          edit: true
+          envKey: MYSQL_HOST
+          labelEn: mysql host
+          labelZh: MYSQL 地址
+          required: true
+          type: text
+        - default: 3306
+          edit: true
+          envKey: MYSQL_PORT
+          labelEn: mysql Port
+          labelZh: mysql端口
+          required: true
+          type: number
+        - default: spug
+          edit: true
+          envKey: MYSQL_DB_NAME
+          labelEn: database name
+          labelZh: 数据库名
+          required: true
+          type: text
+        - default: spug
+          edit: true
+          envKey: MYSQL_USER
+          labelEn: mysql user
+          labelZh: MYSQL 用户
+          required: true
+          type: text
+        - default: Pass@Spug
+          edit: true
+          envKey: MYSQL_PASSWD
+          labelEn: mysql password
+          labelZh: MYSQL 密码
+          random: true
+          required: true
+          rule: paramComplexity
+          type: password

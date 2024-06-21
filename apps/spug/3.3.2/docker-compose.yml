@@ -1,0 +1,40 @@
+version: "3.8"
+services:
+  # db:
+  #   image: mariadb:10.8.2
+  #   container_name: spug-db
+  #   restart: always
+  #   command: --port 3306 --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+  #   volumes:
+  #     - /data/spug/mysql:/var/lib/mysql
+  #   environment:
+  #     - MYSQL_DATABASE=spug
+  #     - MYSQL_USER=spug
+  #     - MYSQL_PASSWORD=spug.cc
+  #     - MYSQL_ROOT_PASSWORD=spug.cc
+  spug:
+    image: openspug/spug-service
+    container_name: spug
+    privileged: true
+    restart: always
+    volumes:
+      - ./data/spug:/data/spug
+      - ./data/repos:/data/repos
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:80"
+    environment:
+      - MYSQL_DATABASE=${MYSQL_DB_NAME}
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASSWORD=${MYSQL_PASSWD}
+      - MYSQL_HOST=${MYSQL_HOST}
+      - MYSQL_PORT=${MYSQL_PORT}
+    #  depends_on:
+      #  - db
+    networks:
+      - 1panel-network
+    labels:  
+      createdBy: "Apps"
+networks:  
+  1panel-network:  
+    external: true
+

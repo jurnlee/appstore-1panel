@@ -47,14 +47,14 @@ additionalProperties:
       required: true
       rule: paramComplexity
       type: password
-    - default: 3000
+    - default: 7005
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Port
       labelZh: HTTP 端口
       required: true
       rule: paramPort
       type: number
-    - default: 222
+    - default: 7222
       envKey: PANEL_APP_PORT_SSH
       labelEn: Port
       labelZh: SSH 端口
