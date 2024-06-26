@@ -1,0 +1,27 @@
+version: "3"
+services:
+  server:
+    image: demo:1.0.0
+    container_name: ${CONTAINER_NAME}
+    restart: unless-stopped
+    networks:
+      - 1panel-network
+    environment:
+      - "TZ=Asia/Shanghai"
+      - "DB_HOST=${DB_HOST}"
+      - "DB_PORT=${DB_PORT}"
+      - "DB_NAME=${DB_NAME}"
+      - "DB_USER=${DB_USER}"
+      - "DB_PASSWORD=${DB_PASSWORD}"
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:80"
+    volumes:
+      - "${CONFIG_PATH}:/etc/nginx/conf.d/default.conf"
+    env_file:
+      - .env
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true
