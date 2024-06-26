@@ -5,8 +5,8 @@ title: 觅思文档
 type: 工具
 description: 觅思文档工具
 additionalProperties:
-    key: mrdoc
-    name: mrdoc
+    key: mr-doc
+    name: mr-doc
     tags:
         - Tool
     shortDescZh: 觅思文档工具

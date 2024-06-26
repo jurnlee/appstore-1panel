@@ -8,7 +8,7 @@ additionalProperties:
           required: true
           rule: paramPort
           type: number
-        - default: demo-app
+        - default: mrdoc
           edit: true
           envKey: CONTAINER_NAME
           labelEn: container name
