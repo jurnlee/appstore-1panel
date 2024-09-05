@@ -19,7 +19,7 @@ services:
       - MINDOC_CACHE=false
       - MINDOC_ENABLE_EXPORT=false
     ports:
-      - "${APP_PORT_HTTP}:8081"
+      - "${APP_PORT_HTTP}:8181"
     volumes:
       - ${DATA_DIR}/mindoc/conf:/mindoc/conf
       - ${DATA_DIR}/mindoc/static:/mindoc/static
