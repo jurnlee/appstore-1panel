@@ -31,16 +31,8 @@ bee run
 docker pull registry.cn-hangzhou.aliyuncs.com/mindoc-org/mindoc:v2.1
 ```
 
-参数   
-DB_ADAPTER                  指定DB类型(默认为sqlite)
-MYSQL_PORT_3306_TCP_ADDR    MySQL地址
-MYSQL_PORT_3306_TCP_PORT    MySQL端口号
-MYSQL_INSTANCE_NAME         MySQL数据库名称
-MYSQL_USERNAME              MySQL账号
-MYSQL_PASSWORD              MySQL密码
-HTTP_PORT                   程序监听的端口号
-MINDOC_ENABLE_EXPORT        开启导出(默认为false)
-
+配置文件参考
+conf/app.conf.example
 
 启动容器
 ```shell
