@@ -193,6 +193,10 @@ cat ./data/hbbs/id_ed25519.pub
 
 ## 4. 应用
 
+- [ ] [pageplug](https://github.com/cloudtogo/pageplug)
+- [ ] [build-base](https://github.com/budibase/budibase) 类似pageplug
+- [ ] [mr-doc](https://gitee.com/zmister/MrDoc)
+- [ ] [zyplayer-doc](https://gitee.com/dromara/zyplayer-doc)
 - [x] [drawdb](https://github.com/drawdb-io/drawdb)
 - [x] [Elastic](https://www.elastic.co/)
     - [x] [Elasticsearch](https://www.elastic.co/elasticsearch/)
@@ -215,6 +219,26 @@ cat ./data/hbbs/id_ed25519.pub
 - [x] [Transmission](https://transmissionbt.com/)
 - [x] [ZeroTier](https://www.zerotier.com/) `客户端`
     - [x] [Ztncui](https://www.zerotier.com/) `服务端`
+
+
+**分类**   
+WebSite: 建站
+Database: 数据库
+Server: Web服务器
+Runtime: 运行环境
+Tool: 实用工具
+Storage: 云存储
+AI：AI大模型
+BI: BI
+Security: 安全
+DevTool: 开发工具
+DevOps: DevOps
+Middleware: 中间件
+Media: 多媒体
+Email：邮件服务
+Game: 休闲游戏
+Local: 本地
+
 
 
 ## 5. 常见问题

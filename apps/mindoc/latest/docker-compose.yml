@@ -1,0 +1,28 @@
+version: "3"
+services:
+  server:
+    image: registry.cn-hangzhou.aliyuncs.com/mindoc-org/mindoc:v2.1
+    container_name: ${CONTAINER_NAME}
+    restart: unless-stopped
+    privileged: false
+    networks:
+      - 1panel-network
+    environment:
+      - "TZ=Asia/Shanghai"
+    ports:
+      - "${APP_PORT_HTTP}:8081"
+    volumes:
+      - ${DATA_DIR}/mindoc/conf:/mindoc/conf
+      - ${DATA_DIR}/mindoc/static:/mindoc/static
+      - ${DATA_DIR}/mindoc/views:/mindoc/views
+      - ${DATA_DIR}/mindoc/uploads:/mindoc/uploads
+      - ${DATA_DIR}/mindoc/runtime:/mindoc/runtime
+      - ${DATA_DIR}/mindoc/database:/mindoc/database
+    env_file:
+      - .env
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true
