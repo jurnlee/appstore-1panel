@@ -47,7 +47,7 @@ docker run -p 8181:8181 --name mindoc -e DB_ADAPTER=mysql -e MYSQL_PORT_3306_TCP
 *启动之后，可通过 `http://localhost:8181`进行访问*
 
 注意： 启动后进入容器执行命令可修改默认用户密码 
-`mindoc_linux_amd64 password -account admin -password admin123`
+`./mindoc_linux_amd64 password -account admin -password admin123`
 
 
 ## 注意事项
