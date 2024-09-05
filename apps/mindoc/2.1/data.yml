@@ -2,7 +2,7 @@ additionalProperties:
     formFields:
         - default: 18088
           edit: true
-          envKey: PANEL_APP_PORT_HTTP
+          envKey: APP_PORT_HTTP
           labelEn: WebUI Port
           labelZh: 网页端口
           required: true
@@ -15,11 +15,11 @@ additionalProperties:
           labelZh: 容器名称
           required: true
           type: text
-        - default: ./data/config
+        - default: ./data
           edit: true
-          envKey: CONFIG_PATH
-          labelEn: config path
-          labelZh: 配置文件路径
+          envKey: DATA_DIR
+          labelEn: data path
+          labelZh: 数据目录
           required: false
           type: text
         - default: mysql
@@ -27,14 +27,14 @@ additionalProperties:
           envKey: DB_HOST
           labelEn: database host
           labelZh: 数据库地址
-          required: true
+          required: false
           type: text
         - default: 3306
           edit: true
           envKey: DB_PORT
           labelEn: db Port
           labelZh: 数据库端口
-          required: true
+          required: false
           type: number
         - default: demo-server
           edit: true
@@ -45,10 +45,10 @@ additionalProperties:
           type: text
         - default: demo-user
           edit: true
-          envKey: DB_USER
+          envKey: DB_USERNAME
           labelEn: database user
           labelZh: 数据库用户
-          required: true
+          required: false
           type: text
         - default: Pass@demo
           edit: true
@@ -56,6 +56,6 @@ additionalProperties:
           labelEn: db password
           labelZh: 数据库密码
           random: true
-          required: true
+          required: false
           rule: paramComplexity
           type: password
