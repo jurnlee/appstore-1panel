@@ -9,6 +9,15 @@ services:
       - 1panel-network
     environment:
       - "TZ=Asia/Shanghai"
+      - MINDOC_RUN_MODE=prod
+      - MINDOC_DB_ADAPTER=mysql
+      - MYSQL_PORT_3306_TCP_ADDR=${DB_HOST}
+      - MYSQL_PORT_3306_TCP_PORT=${DB_PORT}
+      - MYSQL_INSTANCE_NAME=#{DB_NAME}
+      - MYSQL_USERNAME=${DB_USERNAME}
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+      - MINDOC_CACHE=false
+      - MINDOC_ENABLE_EXPORT=false
     ports:
       - "${APP_PORT_HTTP}:8081"
     volumes:
@@ -18,8 +27,6 @@ services:
       - ${DATA_DIR}/mindoc/uploads:/mindoc/uploads
       - ${DATA_DIR}/mindoc/runtime:/mindoc/runtime
       - ${DATA_DIR}/mindoc/database:/mindoc/database
-    env_file:
-      - .env
     labels:
       createdBy: "Apps"
 
