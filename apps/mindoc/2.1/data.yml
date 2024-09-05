@@ -1,6 +1,6 @@
 additionalProperties:
     formFields:
-        - default: 18088
+        - default: 3201
           edit: true
           envKey: APP_PORT_HTTP
           labelEn: WebUI Port
@@ -8,7 +8,7 @@ additionalProperties:
           required: true
           rule: paramPort
           type: number
-        - default: demo-app
+        - default: mindoc
           edit: true
           envKey: CONTAINER_NAME
           labelEn: container name
@@ -36,21 +36,21 @@ additionalProperties:
           labelZh: 数据库端口
           required: false
           type: number
-        - default: demo-server
+        - default: mindoc_db
           edit: true
           envKey: DB_NAME
           labelEn: database name
           labelZh: 数据库名
           required: true
           type: text
-        - default: demo-user
+        - default: root
           edit: true
           envKey: DB_USERNAME
           labelEn: database user
           labelZh: 数据库用户
           required: false
           type: text
-        - default: Pass@demo
+        - default: Pass@root
           edit: true
           envKey: DB_PASSWORD
           labelEn: db password
