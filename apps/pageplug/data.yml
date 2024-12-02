@@ -1,0 +1,20 @@
+name: pageplug
+tags:
+    - Tool
+title: pageplug
+type: 工具
+description: pageplug
+additionalProperties:
+    key: pageplug
+    name: pageplug
+    tags:
+        - Tool
+    shortDescZh: pageplug
+    shortDescEn: pageplug
+    type: tool
+    crossVersionUpdate: true
+    limit: 0
+    recommend: 0
+    website: https://pageplug.cn/
+    github: https://github.com/cloudtogo/pageplug
+    document: https://docs.pageplug.cn/

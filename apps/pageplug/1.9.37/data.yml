@@ -1,0 +1,32 @@
+additionalProperties:
+    formFields:
+        - default: 7564
+          edit: true
+          envKey: APP_PORT_HTTP
+          labelEn: WebUI Port
+          labelZh: 网页端口
+          required: true
+          rule: paramPort
+          type: number
+        - default: 7565
+          edit: true
+          envKey: APP_PORT_HTTPS
+          labelEn: WebUI https Port
+          labelZh: 网页SSL端口
+          required: true
+          rule: paramPort
+          type: number
+        - default: pageplug6
+          edit: true
+          envKey: CONTAINER_NAME
+          labelEn: container name
+          labelZh: 容器名称
+          required: true
+          type: text
+        - default: ./datastacks
+          edit: true
+          envKey: DATA_PATH
+          labelEn: data path
+          labelZh: 数据文件路径
+          required: false
+          type: text

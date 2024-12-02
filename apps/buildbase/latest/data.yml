@@ -1,0 +1,74 @@
+additionalProperties:
+    formFields:
+        - default: 7566
+          edit: true
+          envKey: APP_PORT_HTTP
+          labelEn: WebUI Port
+          labelZh: 网页端口
+          required: true
+          rule: paramPort
+          type: number
+        - default: pageplug6
+          edit: true
+          envKey: CONTAINER_NAME
+          labelEn: container name
+          labelZh: 容器名称
+          required: true
+          type: text
+        - default: ./data
+          edit: true
+          envKey: DATA_PATH
+          labelEn: data path
+          labelZh: 数据文件路径
+          required: false
+          type: text
+        - default: JWT_SECRET_1q2w3e4R
+          edit: true
+          envKey: JWT_SECRET
+          labelEn: jwt secret
+          labelZh: jwt 密钥
+          required: false
+          type: text
+        - default: MINIO_KEY_1q2w3e4R
+          edit: true
+          envKey: MINIO_KEY
+          labelEn: minio key
+          labelZh: minio key
+          required: false
+          type: text
+        - default: MINIO_SECRET_1q2w3e4R
+          edit: true
+          envKey: MINIO_SECRET
+          labelEn: minio secret
+          labelZh: minio 密钥
+          required: false
+          type: text
+        - default: REDIS_1q2w3e4R
+          edit: true
+          envKey: REDIS_PASS
+          labelEn: redis passwd
+          labelZh: redis 密钥
+          required: false
+          type: text
+        - default: buildbase_db
+          edit: true
+          envKey: DB_USER
+          labelEn: DB_USER
+          labelZh: DB USER
+          required: false
+          type: text
+        - default: DB_PASS_1q2w3e4r
+          edit: true
+          envKey: DB_PASS
+          labelEn: DB_PASS
+          labelZh: DB PASS
+          required: false
+          type: text
+        - default: API_KEY_1q2w3e4r
+          edit: true
+          envKey: INTERNAL_API_KEY
+          labelEn: INTERNAL API KEY
+          labelZh: 内部API密钥
+          required: false
+          type: text
+        
