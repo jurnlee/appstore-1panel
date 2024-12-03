@@ -19,7 +19,14 @@ additionalProperties:
           edit: true
           envKey: DATA_PATH
           labelEn: data path
-          labelZh: 数据文件路径
+          labelZh: 程序数据文件路径
+          required: false
+          type: text
+        - default: ./data_db
+          edit: true
+          envKey: DB_PATH
+          labelEn: db data path
+          labelZh: 数据库文件路径
           required: false
           type: text
         - default: JWT_SECRET_1q2w3e4R

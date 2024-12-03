@@ -4,8 +4,9 @@ services:
   budibase:
     restart: unless-stopped
     image: budibase/budibase:latest
+    container_name: ${CONTAINER_NAME}
     ports:
-      - "${APP_HTTP_PORT}:80"
+      - "${APP_PORT_HTTP}:80"
     environment:
       JWT_SECRET: ${JWT_SECRET}
       MINIO_ACCESS_KEY: ${MINIO_KEY}
@@ -14,8 +15,13 @@ services:
       COUCHDB_USER: ${DB_USER}
       COUCHDB_PASSWORD: ${DB_PASS}
       INTERNAL_API_KEY: ${INTERNAL_API_KEY}
+    networks:
+      - 1panel-network
     volumes:
       - ${DATA_PATH}:/data
+      - ${DB_PATH}:/opt/couchdb/data
+    labels:  
+      createdBy: "Apps"
 
 networks:
   1panel-network:
