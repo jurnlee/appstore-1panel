@@ -8,7 +8,7 @@ additionalProperties:
           required: true
           rule: paramPort
           type: number
-        - default: pageplug6
+        - default: buildbase
           edit: true
           envKey: CONTAINER_NAME
           labelEn: container name
