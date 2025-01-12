@@ -1,0 +1,20 @@
+name: tooljet
+tags:
+    - Tool
+title: tooljet
+type: 工具
+description: tooljet
+additionalProperties:
+    key: tooljet
+    name: tooljet
+    tags:
+        - Tool
+    shortDescZh: tooljet
+    shortDescEn: tooljet
+    type: tool
+    crossVersionUpdate: true
+    limit: 0
+    recommend: 0
+    website: https://tooljet.com
+    github: https://github.com/ToolJet/ToolJet
+    document: https://docs.tooljet.com/docs/setup/docker/

@@ -193,26 +193,39 @@ cat ./data/hbbs/id_ed25519.pub
 
 ## 4. 应用
 
-- [ ] [pageplug](https://github.com/cloudtogo/pageplug)
-- [ ] [build-base](https://github.com/budibase/budibase) 类似pageplug
-- [ ] [mr-doc](https://gitee.com/zmister/MrDoc)
-- [ ] [zyplayer-doc](https://gitee.com/dromara/zyplayer-doc)
+低代码工具
+- [x] [pageplug](https://github.com/cloudtogo/pageplug)
+- [x] [buildbase](https://github.com/budibase/budibase) 类似pageplug
+- [x] [mr-doc](https://gitee.com/zmister/MrDoc)
+- [ ] [kestra]()
+
+文档
+- [x] [zyplayer-doc](https://gitee.com/dromara/zyplayer-doc)
+- [x] [trilium](https://github.com/zadam/trilium)]
+- [x] [van-nav]()
+
+
+数据库
 - [x] [drawdb](https://github.com/drawdb-io/drawdb)
 - [x] [Elastic](https://www.elastic.co/)
     - [x] [Elasticsearch](https://www.elastic.co/elasticsearch/)
     - [x] [Kibana](https://www.elastic.co/kibana/)
     - [ ] [Logstash](https://www.elastic.co/logstash/)
-- [x] [Emby](https://emby.media/)
-- [x] [Gitea](https://gitea.io/)
-    - [ ] [Gogs](https://gogs.io/)
-- [x] [Jellyfin](https://jellyfin.org/)
 - [x] [Minio](https://min.io/)
 - [x] [MySQL](https://www.mysql.com/)
     - [x] [MariaDB](https://mariadb.org/)
     - [ ] [Percona](https://www.percona.com/)
+
+影音
+- [x] [Emby](https://emby.media/)
+- [x] [Gitea](https://gitea.io/)
+    - [ ] [Gogs](https://gogs.io/)
+- [x] [Jellyfin](https://jellyfin.org/)
 - [x] [Nacos](https://nacos.io/)
 - [x] [OneDev](https://onedev.io/)
 - [x] [SftpGo](https://sftpgo.com/)
+
+网络
 - [x] [SpeedTest](https://www.speedtest.net/)
     - [x] [SpeedTest-X](https://github.com/BadApple9/speedtest-x/)
 - [x] [SpeedTest-Tracker](https://docs.speedtest-tracker.dev/)

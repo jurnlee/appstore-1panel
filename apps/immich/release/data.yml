@@ -1,6 +1,6 @@
 additionalProperties:
     formFields:
-        - default: 40194
+        - default: 5583
           edit: true
           envKey: PANEL_APP_PORT_HTTP
           labelEn: Port
@@ -26,10 +26,24 @@ additionalProperties:
           edit: true
           envKey: DB_PATH
           labelEn: Database folder path
-          labelZh: 数据库文件夹路径
+          labelZh: 数据库文件夹路径;内置时使用
           required: true
           type: text
-        - default: immich
+        - default: postgres
+          edit: true
+          envKey: DB_HOST
+          labelEn: Database host
+          labelZh: 数据库Host;外置时使用
+          required: true
+          type: text
+        - default: 5432
+          edit: true
+          envKey: DB_PORT
+          labelEn: Database port
+          labelZh: 数据库端口;外置时使用
+          required: true
+          type: number
+        - default: db_immich
           edit: true
           envKey: PANEL_DB_NAME
           labelEn: Database
@@ -37,7 +51,7 @@ additionalProperties:
           required: true
           rule: paramCommon
           type: text
-        - default: postgres
+        - default: immich
           edit: true
           envKey: PANEL_DB_USER
           labelEn: Postgres User
@@ -45,7 +59,7 @@ additionalProperties:
           required: true
           rule: paramCommon
           type: text
-        - default: immich
+        - default: immich_P@ssw0rd
           edit: true
           envKey: PANEL_DB_USER_PASSWORD
           labelEn: Postgres Password

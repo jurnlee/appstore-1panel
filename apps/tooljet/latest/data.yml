@@ -1,0 +1,77 @@
+additionalProperties:
+    formFields:
+        - default: 18088
+          edit: true
+          envKey: PANEL_APP_PORT_HTTP
+          labelEn: WebUI Port
+          labelZh: 网页端口
+          required: true
+          rule: paramPort
+          type: number
+        - default: tooljet-app
+          edit: true
+          envKey: CONTAINER_NAME
+          labelEn: container name
+          labelZh: 容器名称
+          required: true
+          type: text
+        - default: postgres
+          edit: true
+          envKey: DB_HOST
+          labelEn: database host
+          labelZh: 数据库地址
+          required: true
+          type: text
+        - default: 5432
+          edit: true
+          envKey: DB_PORT
+          labelEn: db Port
+          labelZh: 数据库端口
+          required: true
+          type: number
+        - default: tooljet_db
+          edit: true
+          envKey: DB_NAME
+          labelEn: database name
+          labelZh: 数据库名
+          required: true
+          type: text
+        - default: tooljet_user
+          edit: true
+          envKey: DB_USER
+          labelEn: database user
+          labelZh: 数据库用户
+          required: true
+          type: text
+        - default: Pass@tooljet_db
+          edit: true
+          envKey: DB_PASSWORD
+          labelEn: db password
+          labelZh: 数据库密码
+          random: true
+          required: true
+          rule: paramComplexity
+          type: password
+        - default: 6379
+          edit: true
+          envKey: REDIS_PORT
+          labelEn: redis Port
+          labelZh: redis端口
+          required: true
+          type: number
+        - default: redis
+          edit: true
+          envKey: REDIS_HOST
+          labelEn: redis host
+          labelZh: redis host
+          required: true
+          type: text
+        - default: 
+          edit: true
+          envKey: REDIS_PASSWORD
+          labelEn: redis password
+          labelZh: redis密码
+          random: true
+          required: true
+          rule: paramComplexity
+          type: password
