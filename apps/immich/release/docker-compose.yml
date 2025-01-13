@@ -16,9 +16,9 @@ services:
     ports:
       # 2283 (server), 3003 (machine learning) 8081(IMMICH_API_METRICS_PORT) 8082(IMMICH_MICROSERVICES_METRICS_PORT)
       - ${PANEL_APP_PORT_HTTP}:2283
-    depends_on:
-      - immich-redis
-      - immich-database
+    # depends_on:
+    #   - immich-redis
+    #   - immich-database
     labels:  
       createdBy: "Apps"
 
@@ -35,9 +35,9 @@ services:
       - config.env
     environment:
       IMMICH_WORKERS_EXCLUDE: 'api'
-    depends_on:
-      - immich-redis
-      - immich-database
+    # depends_on:
+    #   - immich-redis
+    #   - immich-database
     labels:  
       createdBy: "Apps"
 
