@@ -43,7 +43,7 @@ additionalProperties:
           labelZh: 数据库端口;外置时使用
           required: true
           type: number
-        - default: db_immich
+        - default: immich
           edit: true
           envKey: PANEL_DB_NAME
           labelEn: Database
@@ -64,6 +64,15 @@ additionalProperties:
           envKey: PANEL_DB_USER_PASSWORD
           labelEn: Postgres Password
           labelZh: Postgres 数据库用户密码
+          random: true
+          required: true
+          rule: paramComplexity
+          type: password
+        - default: redis_pass123
+          edit: true
+          envKey: REDIS_PASS
+          labelEn: redis Password
+          labelZh: redis 密码
           random: true
           required: true
           rule: paramComplexity

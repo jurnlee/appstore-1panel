@@ -63,22 +63,22 @@ services:
   #   labels:  
   #     createdBy: "Apps"
 
-  # immich-database:
-  #   container_name: immich_postgres
-  #   restart: always
-  #   networks:
-  #     - 1panel-network
-  #   image: "tensorchord/pgvecto-rs:pg14-v0.2.0@sha256:90724186f0a3517cf6914295b5ab410db9ce23190a2d9d0b9dd6463e3fa298f0"
-  #   env_file:
-  #     - config.env
-  #   environment:
-  #     - POSTGRES_PASSWORD=${PANEL_DB_USER_PASSWORD}
-  #     - POSTGRES_USER=${PANEL_DB_USER}
-  #     - POSTGRES_DB=${PANEL_DB_NAME}
-  #   volumes:
-  #     - ${DB_PATH}:/var/lib/postgresql/data
-  #   labels:  
-  #     createdBy: "Apps"
+  immich-database:
+    container_name: immich_postgres
+    restart: always
+    networks:
+      - 1panel-network
+    image: "tensorchord/pgvecto-rs:pg14-v0.2.0@sha256:90724186f0a3517cf6914295b5ab410db9ce23190a2d9d0b9dd6463e3fa298f0"
+    env_file:
+      - config.env
+    environment:
+      - POSTGRES_PASSWORD=${PANEL_DB_USER_PASSWORD}
+      - POSTGRES_USER=${PANEL_DB_USER}
+      - POSTGRES_DB=${PANEL_DB_NAME}
+    volumes:
+      - ${DB_PATH}:/var/lib/postgresql/data
+    labels:  
+      createdBy: "Apps"
 
 networks:  
   1panel-network:  
