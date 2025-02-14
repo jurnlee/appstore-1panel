@@ -10,37 +10,72 @@ additionalProperties:
           type: number
         - default: ./data/upload
           edit: true
-          envKey: UPLOAD_LOCATION
+          envKey: PANEL_UPLOAD_LOCATION
           labelEn: Path to folder for uploading
           labelZh: 上传用文件夹路径
           required: true
           type: text
+        - default: ${PANEL_UPLOAD_LOCATION}/library
+          edit: true
+          envKey: PANEL_LIBRARY_LOCATION
+          labelEn: Path to folder for library
+          labelZh: 相册文件夹路径
+          required: false
+          type: text
+        - default: ${PANEL_UPLOAD_LOCATION}/thumbs
+          edit: true
+          envKey: PANEL_THUMB_LOCATION
+          labelEn: Path to folder for thumbs
+          labelZh: 缩略图文件夹路径
+          required: false
+          type: text
+        - default: ${PANEL_UPLOAD_LOCATION}/encoded-video
+          edit: true
+          envKey: ENCODED_VIDEO_LOCATION
+          labelEn: Path to folder for encoded video
+          labelZh: 视频转码文件夹路径
+          required: false
+          type: text
+        - default: ${PANEL_UPLOAD_LOCATION}/profile
+          edit: true
+          envKey: PROFILE_LOCATION
+          labelEn: Path to folder for profile
+          labelZh: 用户文件夹路径
+          required: false
+          type: text
+        - default: ${PANEL_UPLOAD_LOCATION}/backups
+          edit: true
+          envKey: BACKUP_LOCATION
+          labelEn: Path to folder for backups
+          labelZh: 备份文件夹路径
+          required: false
+          type: text
         - default: ./data/cache
           edit: true
-          envKey: CACHE_PATH
+          envKey: PANEL_CACHE_PATH
           labelEn: Cache folder path
           labelZh: 缓存文件夹路径
           required: true
           type: text
-        - default: ./data/data
+        - default: ./data/dbdata
           edit: true
-          envKey: DB_PATH
+          envKey: PANEL_DB_PATH
           labelEn: Database folder path
           labelZh: 数据库文件夹路径;内置时使用
           required: true
           type: text
         - default: postgres
           edit: true
-          envKey: DB_HOST
+          envKey: PANEL_DB_HOST
           labelEn: Database host
           labelZh: 数据库Host;外置时使用
           required: true
           type: text
         - default: 5432
           edit: true
-          envKey: DB_PORT
+          envKey: PANEL_DB_PORT
           labelEn: Database port
-          labelZh: 数据库端口;外置时使用
+          labelZh: 数据库端口
           required: true
           type: number
         - default: immich
@@ -70,7 +105,7 @@ additionalProperties:
           type: password
         - default: redis_pass123
           edit: true
-          envKey: REDIS_PASS
+          envKey: PANEL_REDIS_PASS
           labelEn: redis Password
           labelZh: redis 密码
           random: true
