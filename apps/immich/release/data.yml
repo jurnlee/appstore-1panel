@@ -64,12 +64,12 @@ additionalProperties:
           labelZh: 数据库文件夹路径;内置时使用
           required: true
           type: text
-        - default: postgres
+        - default: ''
           edit: true
           envKey: PANEL_DB_HOST
           labelEn: Database host
-          labelZh: 数据库Host;外置时使用
-          required: true
+          labelZh: 数据库Host;外置时使用,内置则留空
+          required: false
           type: text
         - default: 5432
           edit: true
