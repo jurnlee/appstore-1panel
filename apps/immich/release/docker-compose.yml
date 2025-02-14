@@ -8,12 +8,12 @@ services:
     image: ghcr.io/immich-app/immich-server:release
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - ${UPLOAD_LOCATION}:/usr/src/app/upload
-      - ${LIBRARY_LOCATION}:/usr/src/app/upload/library
-      - ${THUMB_LOCATION}:/usr/src/app/upload/thumbs
-      - ${ENCODED_VIDEO_LOCATION}:/usr/src/app/upload/encoded-video
-      - ${PROFILE_LOCATION}:/usr/src/app/upload/profile
-      - ${BACKUP_LOCATION}:/usr/src/app/upload/backups
+      - ${PANEL_UPLOAD_LOCATION}:/usr/src/app/upload
+      - ${PANEL_LIBRARY_LOCATION}:/usr/src/app/upload/library
+      - ${PANEL_THUMB_LOCATION}:/usr/src/app/upload/thumbs
+      - ${PANEL_ENCODED_VIDEO_LOCATION}:/usr/src/app/upload/encoded-video
+      - ${PANEL_PROFILE_LOCATION}:/usr/src/app/upload/profile
+      - ${PANEL_BACKUP_LOCATION}:/usr/src/app/upload/backups
     env_file:
       - config.env
     environment:
@@ -35,12 +35,12 @@ services:
     image: ghcr.io/immich-app/immich-server:release
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - ${UPLOAD_LOCATION}:/usr/src/app/upload
-      - ${LIBRARY_LOCATION}:/usr/src/app/upload/library
-      - ${THUMB_LOCATION}:/usr/src/app/upload/thumbs
-      - ${ENCODED_VIDEO_LOCATION}:/usr/src/app/upload/encoded-video
-      - ${PROFILE_LOCATION}:/usr/src/app/upload/profile
-      - ${BACKUP_LOCATION}:/usr/src/app/upload/backups
+      - ${PANEL_UPLOAD_LOCATION}:/usr/src/app/upload
+      - ${PANEL_LIBRARY_LOCATION}:/usr/src/app/upload/library
+      - ${PANEL_THUMB_LOCATION}:/usr/src/app/upload/thumbs
+      - ${PANEL_ENCODED_VIDEO_LOCATION}:/usr/src/app/upload/encoded-video
+      - ${PANEL_PROFILE_LOCATION}:/usr/src/app/upload/profile
+      - ${PANEL_BACKUP_LOCATION}:/usr/src/app/upload/backups
     env_file:
       - config.env
     environment:
@@ -58,7 +58,7 @@ services:
       - 1panel-network
     image: altran1502/immich-machine-learning:release
     volumes:
-      - ${CACHE_PATH}:/cache
+      - ${PANEL_CACHE_PATH}:/cache
     env_file:
       - config.env
     labels:  
@@ -86,7 +86,7 @@ services:
       - POSTGRES_USER=${DB_USERNAME}
       - POSTGRES_DB=${DB_DATABASE_NAME}
     volumes:
-      - ${DATA_PATH}:/var/lib/postgresql/data
+      - ${PANEL_DATA_PATH}:/var/lib/postgresql/data
     labels:  
       createdBy: "Apps"
 

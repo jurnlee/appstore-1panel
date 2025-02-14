@@ -59,7 +59,7 @@ additionalProperties:
           type: text
         - default: ./data/dbdata
           edit: true
-          envKey: PANEL_DB_PATH
+          envKey: PANEL_DATA_PATH
           labelEn: Database folder path
           labelZh: 数据库文件夹路径;内置时使用
           required: true
