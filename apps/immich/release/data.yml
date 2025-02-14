@@ -15,35 +15,35 @@ additionalProperties:
           labelZh: 上传用文件夹路径
           required: true
           type: text
-        - default: ${PANEL_UPLOAD_LOCATION}/library
+        - default: ./data/library
           edit: true
           envKey: PANEL_LIBRARY_LOCATION
           labelEn: Path to folder for library
           labelZh: 相册文件夹路径
           required: false
           type: text
-        - default: ${PANEL_UPLOAD_LOCATION}/thumbs
+        - default: ./data/thumbs
           edit: true
           envKey: PANEL_THUMB_LOCATION
           labelEn: Path to folder for thumbs
           labelZh: 缩略图文件夹路径
           required: false
           type: text
-        - default: ${PANEL_UPLOAD_LOCATION}/encoded-video
+        - default: ./data/encoded-video
           edit: true
           envKey: ENCODED_VIDEO_LOCATION
           labelEn: Path to folder for encoded video
           labelZh: 视频转码文件夹路径
           required: false
           type: text
-        - default: ${PANEL_UPLOAD_LOCATION}/profile
+        - default: ./data/profile
           edit: true
           envKey: PROFILE_LOCATION
           labelEn: Path to folder for profile
           labelZh: 用户文件夹路径
           required: false
           type: text
-        - default: ${PANEL_UPLOAD_LOCATION}/backups
+        - default: ./data/backups
           edit: true
           envKey: BACKUP_LOCATION
           labelEn: Path to folder for backups
@@ -96,7 +96,7 @@ additionalProperties:
           type: text
         - default: immich_P@ssw0rd
           edit: true
-          envKey: PANEL_DB_USER_PASSWORD
+          envKey: PANEL_DB_PASSWORD
           labelEn: Postgres Password
           labelZh: Postgres 数据库用户密码
           random: true
@@ -105,7 +105,7 @@ additionalProperties:
           type: password
         - default: redis_pass123
           edit: true
-          envKey: PANEL_REDIS_PASS
+          envKey: PANEL_REDIS_PASSWORD
           labelEn: redis Password
           labelZh: redis 密码
           random: true

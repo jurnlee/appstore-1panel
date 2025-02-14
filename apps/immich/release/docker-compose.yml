@@ -15,6 +15,7 @@ services:
       - ${PANEL_PROFILE_LOCATION}:/usr/src/app/upload/profile
       - ${PANEL_BACKUP_LOCATION}:/usr/src/app/upload/backups
     env_file:
+      - .env
       - config.env
     environment:
       IMMICH_WORKERS_INCLUDE: 'api'
@@ -42,6 +43,7 @@ services:
       - ${PANEL_PROFILE_LOCATION}:/usr/src/app/upload/profile
       - ${PANEL_BACKUP_LOCATION}:/usr/src/app/upload/backups
     env_file:
+      - .env
       - config.env
     environment:
       IMMICH_WORKERS_EXCLUDE: 'api'
@@ -60,6 +62,7 @@ services:
     volumes:
       - ${PANEL_CACHE_PATH}:/cache
     env_file:
+      - .env
       - config.env
     labels:  
       createdBy: "Apps"
@@ -74,17 +77,18 @@ services:
   #     createdBy: "Apps"
 
   immich-database:
-    container_name: immich_postgres
+    container_name: ${CONTAINER_NAME}-postgres
     restart: always
     networks:
       - 1panel-network
     image: "tensorchord/pgvecto-rs:pg14-v0.2.0@sha256:90724186f0a3517cf6914295b5ab410db9ce23190a2d9d0b9dd6463e3fa298f0"
     env_file:
+      - .env
       - config.env
     environment:
-      - POSTGRES_PASSWORD=${DB_PASSWORD}
-      - POSTGRES_USER=${DB_USERNAME}
-      - POSTGRES_DB=${DB_DATABASE_NAME}
+      - POSTGRES_PASSWORD=${PANEL_DB_PASSWORD}
+      - POSTGRES_USER=${PANEL_DB_USER}
+      - POSTGRES_DB=${PANEL_DB_NAME}
     volumes:
       - ${PANEL_DATA_PATH}:/var/lib/postgresql/data
     labels:  
