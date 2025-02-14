@@ -31,21 +31,21 @@ additionalProperties:
           type: text
         - default: ./data/encoded-video
           edit: true
-          envKey: ENCODED_VIDEO_LOCATION
+          envKey: PANEL_ENCODED_VIDEO_LOCATION
           labelEn: Path to folder for encoded video
           labelZh: 视频转码文件夹路径
           required: false
           type: text
         - default: ./data/profile
           edit: true
-          envKey: PROFILE_LOCATION
+          envKey: PANEL_PROFILE_LOCATION
           labelEn: Path to folder for profile
           labelZh: 用户文件夹路径
           required: false
           type: text
         - default: ./data/backups
           edit: true
-          envKey: BACKUP_LOCATION
+          envKey: PANEL_BACKUP_LOCATION
           labelEn: Path to folder for backups
           labelZh: 备份文件夹路径
           required: false
@@ -77,6 +77,7 @@ additionalProperties:
           labelEn: Database port
           labelZh: 数据库端口
           required: true
+          rule: paramPort
           type: number
         - default: immich
           edit: true
